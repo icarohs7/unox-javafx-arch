@@ -52,12 +52,7 @@ repositories {
     jcenter()
 }
 dependencies {
-    //Artifacts of common module
-    implementation("com.github.icarohs7:unoxcore-common:$unoxcore_version") //Multiplatform
-    implementation("com.github.icarohs7:unoxcore-common-js:$unoxcore_version") //JS
-    implementation("com.github.icarohs7:unoxcore-common-jvm:$unoxcore_version") //JVM
-    
-    //Common module + JVM specific features
-    implementation("com.github.icarohs7:unoxcore-jvm:$unoxcore_version")
+    //Core helpers
+    implementation("com.github.icarohs7:unox-javafx-arch-core:$unoxjavafxarch_version") //Multiplatform
 }
 ```

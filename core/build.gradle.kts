@@ -11,12 +11,11 @@ compileKotlin {
 }
 
 kotlin {
+    val libraryName = "unox-javafx-arch-core"
     setupMetaInfoNameOnAll(rootProject, project)
-
-    metadata { mavenPublication { artifactId = "unox-javafx-arch-metadata" } }
-
+    metadata { mavenPublication { artifactId = "$libraryName-metadata" } }
     jvm {
-        mavenPublication { artifactId = "unox-javafx-arch" }
+        mavenPublication { artifactId = libraryName }
         compilations.all { kotlinOptions.jvmTarget = "1.8" }
     }
 
