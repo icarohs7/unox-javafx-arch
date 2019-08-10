@@ -29,7 +29,9 @@ kotlin {
 
                 implementation(Deps.arrowCoreData)
                 implementation(Deps.coroutinesCore)
+                implementation(Deps.koinCore)
 
+                implementation(JavaFxDeps.coroutinesJavaFx)
                 implementation(JavaFxDeps.tornadoFx)
             }
         }
@@ -38,6 +40,7 @@ kotlin {
             kotlin.srcDir("src/test/kotlin")
             dependencies {
                 TestDeps.core.forEach(::implementation)
+                JavaFxTestDeps.core.forEach(::implementation)
             }
         }
     }
