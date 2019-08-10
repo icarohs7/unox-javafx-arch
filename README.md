@@ -53,6 +53,6 @@ repositories {
 }
 dependencies {
     //Core helpers
-    implementation("com.github.icarohs7:unox-javafx-arch-core:$unoxjavafxarch_version") //Multiplatform
+    implementation("com.github.icarohs7:unox-javafx-arch-core:$unoxjavafxarch_version")
 }
 ```
