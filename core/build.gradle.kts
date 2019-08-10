@@ -29,6 +29,8 @@ kotlin {
 
                 implementation(Deps.arrowCoreData)
                 implementation(Deps.coroutinesCore)
+
+                implementation(JavaFxDeps.tornadoFx)
             }
         }
 
